@@ -1,0 +1,7 @@
+---
+# file: roles/base/tasks/hosts.yml
+- name: Add and update packages
+  include_tasks: apt.yml
+
+- name: Setup system parameters (boot, hosts, timzone)
+  include_tasks: hosts.yml
