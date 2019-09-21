@@ -1,0 +1,4 @@
+---
+# file: roles/k8-master/tasks/main.yml
+- name: Add and update packages
+  include_tasks: install-k8.yml

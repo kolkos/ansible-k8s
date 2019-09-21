@@ -1,5 +1,5 @@
 ---
-# file: roles/base/tasks/hosts.yml
+# file: roles/base/tasks/main.yml
 - name: Add and update packages
   include_tasks: apt.yml
 

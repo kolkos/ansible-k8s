@@ -1,0 +1,20 @@
+---
+- name: Kubernetes Master
+
+  hosts: master
+  remote_user: pirate
+  become: true
+
+  roles:
+    - role: k8-master
+      mode: master
+
+#- name: Kubernetes Nodes
+#
+#  hosts: nodes
+#  remote_user: pirate
+#  become: true
+#
+#  roles:
+#    - role: kubernetes
+#      mode: node

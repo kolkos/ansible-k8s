@@ -1,0 +1,8 @@
+# file: k8-master/tasks/install-k8.yml
+- name: Clone kubernetes
+  git:
+    repo: 'git@github.com:Project31/kubernetes-installer-rpi.git'
+    dest: /srv/git/k8
+
+- name: Run kubernetes install script
+  script: /srv/git/k8/build-master.sh
