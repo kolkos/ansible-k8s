@@ -30,6 +30,26 @@ sudo curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-ke
 
 sudo apt update
 
-9. Upgrade apt                              Yes              Yes
+9. generate locales
+
+sudo apt install locales-all
+
+
+10. Upgrade apt                              Yes              Yes
 
 sudo apt upgrade
+
+11. Install kubeadm                          Yes              Yes
+
+sudo apt-get install -qy kubeadm
+
+ 
+
+
+----
+
+12. Pre-pull images
+
+sudo kubeadm config images pull -v3         Yes               No
+
+
